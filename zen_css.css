@@ -1,6 +1,5 @@
-
+/* css for entire site */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-
 
 #css-zen-garden {    
     background-color: black;
@@ -9,16 +8,22 @@
     background-size: contain;
 }
 
-p, h3, h1 {
+p, h3, h1, li {
     font-family: 'Roboto Mono', monospace;
-    color: white;
+    color: #ffffff;
 }
 
+ul {
+    list-style-type: none;
+}
+
+/* HEADER */
 header h1 {
     font-family: 'Roboto Mono', monospace;
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
+    margin-top: 45%;
     margin-bottom: 0;
 }
 
@@ -29,4 +34,71 @@ header h2 {
     text-align: center;
 }
 
+#zen-summary p {
+    padding: 1rem 1rem;
+    color: white;
+    text-align: center;
+}
 
+/* GRID STYLE */
+#zen-preamble, #zen-participation {
+    padding: 1rem 1rem;
+    background-color: #594C2D;
+    border: solid 3px #C09C25;
+    margin-bottom: 1rem;
+}
+
+#zen-preamble p, #zen-participation p, #zen-preamble h3, #zen-participation h3 {
+    color: #E8D35C;
+}
+
+#zen-participation a {
+    background-color:#E8D35C;
+    color: #594C2D;
+}
+
+/* BLUE IBM STYLE */
+#zen-explanation, #zen-benefits {
+    padding: 1rem 1rem;
+    background-color: #496CE3;    
+    border: solid 3px #ffffff;
+    margin-bottom: 1rem;
+}
+
+#zen-explanation p, #zen-benefits p, #zen-explanation h3, #zen-benefits h3 {
+    color: #ffffff;
+}
+
+/* GREEN IBM STYLE */
+#zen-requirements {
+    padding: 1rem 1rem;
+    background-color: #1d1d1f;
+    border: solid 3px #44CA41;
+}
+
+#zen-requirements a {
+    background-color: #44CA41;
+    color: #ffffff;
+}
+
+#zen-requirements h3, #zen-requirements p {
+    color: #44CA41;
+}
+
+/* FOOTER */
+footer {
+    background-color: #44CA41;
+    padding: 1rem 1rem;
+}
+
+footer a {
+    float: left;
+    text-align: center;
+    width: 20%;
+    color: white;
+    margin-top: -8px;
+}
+
+.design-selection, .design-archives, .zen-resources {
+    text-align: center;;
+}
