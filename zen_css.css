@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 
-#css-zen-garden {
-    background: url(images/header.jpg);
-	background-repeat: no-repeat;
+#css-zen-garden {    
     background-color: black;
+    background-image: url(images/header.jpg);
+    background-repeat: no-repeat;
     background-size: contain;
 }
 
