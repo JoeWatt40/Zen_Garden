@@ -8,6 +8,19 @@
     background-size: contain;
 }
 
+body {
+    margin: 8px 0 0 0;
+}
+
+.wrapper {
+    background-image: url(images/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.preamble, .main {
+    margin: 0 8px;
+}
 p, h3, h1, li {
     font-family: 'Roboto Mono', monospace;
     color: #ffffff;
@@ -101,4 +114,15 @@ footer a {
 
 .design-selection, .design-archives, .zen-resources {
     text-align: center;
+}
+
+.design-selection h3.select, .design-archives h3.archives, .zen-resources h3.resources::before {
+    content: "";
+    background-image: url(images/satellite.png);
+    background-repeat: no-repeat;
+	background-position: center;
+}
+
+@media only screen and (min-device-width: 480px)  {
+    
 }
