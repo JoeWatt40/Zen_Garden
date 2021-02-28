@@ -131,7 +131,7 @@ footer a {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (min-width: 44em)  {
+@media only screen and (min-width: 50em)  {
     /* intro grid */
     .intro {
         display: grid;
@@ -199,5 +199,12 @@ footer a {
 
     footer {
         grid-column: 1 / span 5;
+    }
+
+    /* satellite grid */
+    .sidebar .wrapper {
+        margin-top: 4em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
