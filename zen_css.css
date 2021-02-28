@@ -12,12 +12,6 @@ body {
     margin: 8px 0 0 0;
 }
 
-.wrapper {
-    background-image: url(images/footer.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .preamble, .main {
     margin: 0 8px;
 }
@@ -125,6 +119,18 @@ footer a {
 	background-position: center;
 }
 
+#css-zen-garden::after {
+    content: "";
+    background-image: url("images/footer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+}
+
+/* MEDIA QUERIES */
 @media only screen and (min-device-width: 480px)  {
     
 }
