@@ -132,7 +132,34 @@ footer a {
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 44em)  {
+    /* intro grid */
+    .intro {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
 
+    header, .summary {
+        grid-column: 1 / span 5;
+    }
+
+    .preamble {
+        grid-column: 1 / span 2;
+    }
+
+    .preamble::after {
+        content: "";
+        display: block;
+        margin-top: -20%;
+        margin-left: 60%;
+        background-image: url("images/shuttle.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 20vw;
+        height: 30vh;
+        position: absolute;
+    }
+
+    /* main grid */
     .main {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
