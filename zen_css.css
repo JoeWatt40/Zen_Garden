@@ -28,6 +28,7 @@ p, h3, h1, li {
 
 ul {
     list-style-type: none;
+    padding: 15px;
 }
 
 /* HEADER */
@@ -113,7 +114,8 @@ footer a {
 }
 
 .design-selection, .design-archives, .zen-resources {
-    text-align: center;
+    text-align: left;
+    padding-left: 10px;
 }
 
 .design-selection h3.select, .design-archives h3.archives, .zen-resources h3.resources::before {
