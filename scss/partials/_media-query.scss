@@ -1,0 +1,77 @@
+// media queries
+
+$break-small: 50em;
+
+@media only screen and (min-width: $break-small)  {
+    /* intro grid */
+    .intro {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    header, .summary {
+        grid-column: 1 / span 5;
+    }
+
+    .preamble {
+        grid-column: 1 / span 2;
+    }
+
+    .preamble::after {
+        content: "";
+        display: block;
+        margin-top: -20%;
+        margin-left: 60%;
+        @include background-img($shuttle-img);
+        width: 20vw;
+        height: 30vh;
+        position: absolute;
+    }
+
+    /* main grid */
+    .main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1em;
+    }
+
+    .benefits {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+    }
+    
+    .explanation {
+        grid-column: 3 / span 3;
+    }
+
+    .participation {
+        grid-column: 1 / span 3;
+    }
+
+    .participation::after {
+        content: "";
+        display: block;
+        margin-top: -20%;
+        margin-left: 70%;
+        @include background-img($astronaut-img);
+        width: 20vw;
+        height: 30vh;
+        position: absolute;
+    }
+
+    .requirements {
+        grid-column: 1 / span 5;
+    }
+
+    footer {
+        grid-column: 1 / span 5;
+    }
+
+    /* satellite grid */
+    .sidebar .wrapper {
+        margin-top: 4em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

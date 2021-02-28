@@ -1,210 +1,212 @@
 /* css for entire site */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-
-#css-zen-garden {    
-    background-color: black;
-    background-image: url(images/header.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+#css-zen-garden {
+  background-color: #000;
+  background-image: url("/images/moon.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 body {
-    margin: 8px 0 0 0;
+  margin: 8px 0 0 0;
 }
 
 .preamble, .main {
-    margin: 0 8px;
+  margin: 0 8px;
 }
+
 p, h3, h1, li {
-    font-family: 'Roboto Mono', monospace;
-    color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  color: #fff;
 }
 
 ul {
-    list-style-type: none;
-    padding: 15px;
+  list-style-type: none;
+  padding: 15px;
 }
 
 /* HEADER */
 header h1 {
-    font-family: 'Roboto Mono', monospace;
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 45%;
-    margin-bottom: 0;
+  font-family: "Roboto Mono", monospace;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 45%;
+  margin-bottom: 0;
 }
 
 header h2 {
-    font-family: 'Roboto Mono', monospace;
-    color: white;
-    font-style: italic;
-    text-align: center;
+  font-family: "Roboto Mono", monospace;
+  color: #fff;
+  font-style: italic;
+  text-align: center;
 }
 
 #zen-summary p {
-    padding: 1rem 1rem;
-    color: white;
-    text-align: center;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
 }
 
 /* GRID STYLE */
 #zen-preamble, #zen-participation {
-    padding: 1rem 1rem;
-    background-color: #594C2D;
-    border: solid 3px #C09C25;
-    margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #594C2D;
+  border: solid 3px #C09C25;
+  margin-bottom: 1rem;
 }
 
 #zen-preamble p, #zen-participation p, #zen-preamble h3, #zen-participation h3 {
-    color: #E8D35C;
+  color: #E8D35C;
 }
 
 #zen-participation a {
-    background-color:#E8D35C;
-    color: #594C2D;
+  background-color: #E8D35C;
+  color: #594C2D;
 }
 
 /* BLUE IBM STYLE */
 #zen-explanation, #zen-benefits {
-    padding: 1rem 1rem;
-    background-color: #496CE3;    
-    border: solid 3px #ffffff;
-    margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #496CE3;
+  border: solid 3px #fff;
+  margin-bottom: 1rem;
 }
 
 #zen-explanation p, #zen-benefits p, #zen-explanation h3, #zen-benefits h3 {
-    color: #ffffff;
+  color: #fff;
 }
 
 /* GREEN IBM STYLE */
 #zen-requirements {
-    padding: 1rem 1rem;
-    background-color: #1d1d1f;
-    border: solid 3px #44CA41;
+  padding: 1rem;
+  background-color: #000;
+  border: solid 3px #44ca41;
 }
 
 #zen-requirements a {
-    background-color: #44CA41;
-    color: #ffffff;
+  background-color: #44ca41;
+  color: #fff;
 }
 
 #zen-requirements h3, #zen-requirements p {
-    color: #44CA41;
+  color: #44ca41;
 }
 
 /* FOOTER */
 footer {
-    background-color: #44CA41;
-    padding: 1rem 1rem;
+  background-color: #44ca41;
+  padding: 1rem;
 }
 
 footer a {
-    float: left;
-    text-align: center;
-    width: 20%;
-    color: white;
-    margin-top: -8px;
+  float: left;
+  text-align: center;
+  width: 20%;
+  color: #fff;
+  margin-top: -8px;
 }
 
 .design-selection, .design-archives, .zen-resources {
-    text-align: left;
-    padding-left: 10px;
+  text-align: left;
+  padding-left: 10px;
 }
 
 .design-selection h3.select, .design-archives h3.archives, .zen-resources h3.resources {
-    content: "";
-    background-image: url(images/satellite.png);
-    background-repeat: no-repeat;
-	background-position: center;
+  content: "";
+  background-image: url("/images/satellite.png");
+  background-repeat: no-repeat;
+  background-size: unset;
+  background-position: center;
 }
 
 #css-zen-garden::after {
+  content: "";
+  background-image: url("/images/earth.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+}
+
+@media only screen and (min-width: 50em) {
+  /* intro grid */
+  .intro {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  header, .summary {
+    grid-column: 1/span 5;
+  }
+
+  .preamble {
+    grid-column: 1/span 2;
+  }
+
+  .preamble::after {
     content: "";
-    background-image: url("images/footer.jpg");
-    background-size: cover;
+    display: block;
+    margin-top: -20%;
+    margin-left: 60%;
+    background-image: url("/images/shuttle.png");
     background-repeat: no-repeat;
-    background-position-x: center;
-    width: 100%;
-    height: 50%;
+    background-size: contain;
+    width: 20vw;
+    height: 30vh;
     position: absolute;
+  }
+
+  /* main grid */
+  .main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1em;
+  }
+
+  .benefits {
+    grid-column: 1/span 2;
+    grid-row: 1/span 1;
+  }
+
+  .explanation {
+    grid-column: 3/span 3;
+  }
+
+  .participation {
+    grid-column: 1/span 3;
+  }
+
+  .participation::after {
+    content: "";
+    display: block;
+    margin-top: -20%;
+    margin-left: 70%;
+    background-image: url("/images/astronaut.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20vw;
+    height: 30vh;
+    position: absolute;
+  }
+
+  .requirements {
+    grid-column: 1/span 5;
+  }
+
+  footer {
+    grid-column: 1/span 5;
+  }
+
+  /* satellite grid */
+  .sidebar .wrapper {
+    margin-top: 4em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-/* MEDIA QUERIES */
-@media only screen and (min-width: 50em)  {
-    /* intro grid */
-    .intro {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-    }
-
-    header, .summary {
-        grid-column: 1 / span 5;
-    }
-
-    .preamble {
-        grid-column: 1 / span 2;
-    }
-
-    .preamble::after {
-        content: "";
-        display: block;
-        margin-top: -20%;
-        margin-left: 60%;
-        background-image: url("images/shuttle.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 20vw;
-        height: 30vh;
-        position: absolute;
-    }
-
-    /* main grid */
-    .main {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 1em;
-    }
-
-    .benefits {
-        grid-column: 1 / span 2;
-        grid-row: 1 / span 1;
-    }
-    
-    .explanation {
-        grid-column: 3 / span 3;
-    }
-
-    .participation {
-        grid-column: 1 / span 3;
-    }
-
-    .participation::after {
-        content: "";
-        display: block;
-        margin-top: -20%;
-        margin-left: 70%;
-        background-image: url("images/astronaut.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 20vw;
-        height: 30vh;
-        position: absolute;
-    }
-
-    .requirements {
-        grid-column: 1 / span 5;
-    }
-
-    footer {
-        grid-column: 1 / span 5;
-    }
-
-    /* satellite grid */
-    .sidebar .wrapper {
-        margin-top: 4em;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+/*# sourceMappingURL=zen_css.css.map */
