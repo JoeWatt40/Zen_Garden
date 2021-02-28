@@ -131,6 +131,46 @@ footer a {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (min-device-width: 480px)  {
+@media only screen and (min-width: 44em)  {
+
+    .main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1em;
+    }
+
+    .benefits {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+    }
     
+    .explanation {
+        grid-column: 3 / span 3;
+    }
+
+    .participation {
+        grid-column: 1 / span 3;
+    }
+
+    .participation::after {
+        content: "";
+        display: block;
+        margin-top: -20%;
+        margin-left: 70%;
+        background-image: url("images/astronaut.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 20vw;
+        height: 30vh;
+        position: absolute;
+    }
+
+    .requirements {
+        grid-column: 1 / span 5;
+    }
+
+    footer {
+        grid-column: 1 / span 5;
+    }
 }
