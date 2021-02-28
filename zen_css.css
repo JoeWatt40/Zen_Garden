@@ -112,7 +112,7 @@ footer a {
     padding-left: 10px;
 }
 
-.design-selection h3.select, .design-archives h3.archives, .zen-resources h3.resources::before {
+.design-selection h3.select, .design-archives h3.archives, .zen-resources h3.resources {
     content: "";
     background-image: url(images/satellite.png);
     background-repeat: no-repeat;
