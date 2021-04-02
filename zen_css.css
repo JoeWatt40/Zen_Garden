@@ -169,10 +169,39 @@ footer a {
     grid-column: 1/span 5;
   }
 
+  #zen-preamble, #zen-participation {
+    width: 500px;
+    height: 500px;
+    margin: 10vh auto 0;
+    line-height: 1.6;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #594C2D 0%,#C09C25 100%);
+    box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.3);
+    margin: 3rem;
+    color: white;
+  }
+  
+  #zen-benefits, #zen-explanation {
+    width: 500px;
+    height: 500px;
+    margin: 10vh auto 0;
+    line-height: 1.6;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #496CE3 0%,#23538a 100%);
+    box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.3);
+    color: white;
+  }
+
+  #zen-preamble p, #zen-preamble h3, #zen-participation p, #zen-participation h3 {
+    color: white;
+  }
+  
   .preamble {
     grid-column: 1/span 2;
   }
-
+  
   .preamble::after {
     content: "";
     display: block;
