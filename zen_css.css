@@ -1,7 +1,15 @@
 /* css for entire site */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
-/*comment */
-/*chris comment*/
+@keyframes clockwise {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes counter-clockwise {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 #css-zen-garden {
   background-color: #000;
   background-image: url("images/moon.jpg");
@@ -114,12 +122,29 @@ footer a {
   padding-left: 10px;
 }
 
-.design-selection h3.select, .design-archives h3.archives, .zen-resources h3.resources {
+.design-selection h3.select::after, .design-archives h3.archives::after, .zen-resources h3.resources::after {
   content: "";
+  position: absolute;
+  width: 7%;
+  height: 7%;
+  margin-left: 50px;
+  margin-top: -35px;
   background-image: url("images/satellite.png");
   background-repeat: no-repeat;
-  background-size: unset;
+  background-size: cover;
   background-position: center;
+}
+
+.design-selection h3.select::after {
+  animation: clockwise 16s linear infinite;
+}
+
+.design-archives h3.archives::after {
+  animation: counter-clockwise 28s linear infinite;
+}
+
+.zen-resources h3.resources::after {
+  animation: counter-clockwise 22s linear infinite;
 }
 
 #css-zen-garden::after {
