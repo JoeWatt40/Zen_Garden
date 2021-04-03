@@ -1,6 +1,6 @@
 // media queries
 
-$break-small: 50em;
+$break-small: 62em;
 
 @media only screen and (min-width: $break-small)  {
     /* intro grid */
@@ -11,6 +11,64 @@ $break-small: 50em;
 
     header, .summary {
         grid-column: 1 / span 5;
+    }
+
+    .preamble:hover, .explanation:hover, .benefits:hover, .participation:hover {
+        transform: scale(1.15);
+    }
+    
+    #zen-preamble {
+        width: 470px;
+        height: 460px;
+        padding: 3.9rem;
+        line-height: 1.5;
+        text-align: center;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #594C2D 0%,#C09C25 100%);
+        box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.3);
+        margin: 3rem;
+        color: white;
+    }
+
+    #zen-participation {
+        width: 600px;
+        height: 590px;
+        padding: 4rem;
+        line-height: 1.5;
+        text-align: center;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #594C2D 0%,#C09C25 100%);
+        box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.3);
+        margin: 3rem;
+        color: white;
+    }
+    
+    #zen-benefits {
+        width: 380px;
+        height: 370px;
+        padding: 2rem;
+        line-height: 1.5;
+        text-align: center;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #496CE3 0%,#23538a 100%);
+        box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.3);
+        color: white;
+    }
+
+    #zen-explanation {
+        width: 500px;
+        height: 490px;
+        padding: 4rem;
+        line-height: 1.5;
+        text-align: center;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #496CE3 0%,#23538a 100%);
+        box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.3);
+        color: white;
+    }
+
+    #zen-preamble p, #zen-preamble h3, #zen-participation p, #zen-participation h3 {
+        color: white;
     }
 
     .preamble {

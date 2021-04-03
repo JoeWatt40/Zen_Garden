@@ -128,15 +128,15 @@ footer a {
 }
 
 .design-selection h3.select::after {
-    animation: clockwise 16s linear infinite;
+    animation: clockwise 25s linear infinite;
 }
 
 .design-archives h3.archives::after {
-    animation: counter-clockwise 28s linear infinite;
+    animation: clockwise 25s linear infinite;
 }
 
 .zen-resources h3.resources::after {
-    animation: counter-clockwise 22s linear infinite;
+    animation: clockwise 25s linear infinite;
 }
 
 #css-zen-garden::after {

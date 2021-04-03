@@ -5,11 +5,6 @@
     transform: rotate(360deg);
   }
 }
-@keyframes counter-clockwise {
-  100% {
-    transform: rotate(-360deg);
-  }
-}
 #css-zen-garden {
   background-color: #000;
   background-image: url("images/moon.jpg");
@@ -136,15 +131,15 @@ footer a {
 }
 
 .design-selection h3.select::after {
-  animation: clockwise 16s linear infinite;
+  animation: clockwise 25s linear infinite;
 }
 
 .design-archives h3.archives::after {
-  animation: counter-clockwise 28s linear infinite;
+  animation: clockwise 25s linear infinite;
 }
 
 .zen-resources h3.resources::after {
-  animation: counter-clockwise 22s linear infinite;
+  animation: clockwise 25s linear infinite;
 }
 
 #css-zen-garden::after {
@@ -180,8 +175,8 @@ footer a {
     line-height: 1.5;
     text-align: center;
     border-radius: 50%;
-    background: linear-gradient(135deg, #594C2D 0%,#C09C25 100%);
-    box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #594C2D 0%, #C09C25 100%);
+    box-shadow: inset -8px -7px 4px 0px rgba(0, 0, 0, 0.3);
     margin: 3rem;
     color: white;
   }
@@ -193,12 +188,12 @@ footer a {
     line-height: 1.5;
     text-align: center;
     border-radius: 50%;
-    background: linear-gradient(135deg, #594C2D 0%,#C09C25 100%);
-    box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #594C2D 0%, #C09C25 100%);
+    box-shadow: inset -8px -7px 4px 0px rgba(0, 0, 0, 0.3);
     margin: 3rem;
     color: white;
   }
-  
+
   #zen-benefits {
     width: 380px;
     height: 370px;
@@ -206,8 +201,8 @@ footer a {
     line-height: 1.5;
     text-align: center;
     border-radius: 50%;
-    background: linear-gradient(135deg, #496CE3 0%,#23538a 100%);
-    box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #496CE3 0%, #23538a 100%);
+    box-shadow: inset -8px -7px 4px 0px rgba(0, 0, 0, 0.3);
     color: white;
   }
 
@@ -218,19 +213,19 @@ footer a {
     line-height: 1.5;
     text-align: center;
     border-radius: 50%;
-    background: linear-gradient(135deg, #496CE3 0%,#23538a 100%);
-    box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #496CE3 0%, #23538a 100%);
+    box-shadow: inset -8px -7px 4px 0px rgba(0, 0, 0, 0.3);
     color: white;
   }
 
   #zen-preamble p, #zen-preamble h3, #zen-participation p, #zen-participation h3 {
     color: white;
   }
-  
+
   .preamble {
     grid-column: 1/span 2;
   }
-  
+
   .preamble::after {
     content: "";
     display: block;
