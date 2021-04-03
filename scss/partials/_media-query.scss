@@ -12,10 +12,6 @@ $break-small: 62em;
     header, .summary {
         grid-column: 1 / span 5;
     }
-
-    .preamble:hover, .explanation:hover, .benefits:hover, .participation:hover {
-        transform: scale(1.15);
-    }
     
     #zen-preamble {
         width: 470px;
@@ -71,6 +67,14 @@ $break-small: 62em;
         color: white;
     }
 
+    .preamble:hover,
+    .explanation:hover,
+    .benefits:hover,
+    .participation:hover {
+        transform: scale(1.15);
+        transition: all 800ms cubic-bezier(.41,1.15,.41,1.15);
+    }
+
     .preamble {
         grid-column: 1 / span 2;
     }
@@ -78,12 +82,18 @@ $break-small: 62em;
     .preamble::after {
         content: "";
         display: block;
-        margin-top: -20%;
-        margin-left: 60%;
+        margin-top: -30%;
+        margin-left: 50%;
         @include background-img($shuttle-img);
-        width: 20vw;
-        height: 30vh;
+        width: 25vw;
+        height: 35vh;
         position: absolute;
+        transform: rotate(-45deg);
+    }
+
+    .preamble:hover::after {
+        margin-top: -77%;
+        margin-left: 129%;
     }
 
     /* main grid */
@@ -110,12 +120,17 @@ $break-small: 62em;
     .participation::after {
         content: "";
         display: block;
-        margin-top: -20%;
-        margin-left: 70%;
+        margin-top: -40%;
+        margin-left: 55%;
         @include background-img($astronaut-img);
         width: 20vw;
         height: 30vh;
         position: absolute;
+    }
+
+    .participation:hover::after {
+        margin-top: -84%;
+        margin-left: 115%;
     }
 
     .requirements {
