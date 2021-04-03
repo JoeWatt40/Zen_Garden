@@ -157,11 +157,11 @@ footer a {
   /* intro grid */
   .intro {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 70px repeat(7, 1fr) 70px;
   }
 
   header, .summary {
-    grid-column: 1/span 5;
+    grid-column: 1/span 9;
   }
 
   #zen-preamble {
@@ -227,7 +227,7 @@ footer a {
   }
 
   .preamble {
-    grid-column: 1/span 2;
+    grid-column: 2/span 3;
   }
 
   .preamble::after {
@@ -252,22 +252,24 @@ footer a {
   /* main grid */
   .main {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1em;
+    grid-template-columns: 25px repeat(7, 1fr) 25px;
+    grid-template-rows: 50px 150px 1fr 1fr 460px 40px;
+    gap: 1.5em;
   }
 
   .benefits {
-    grid-column: 1/span 2;
-    grid-row: 1/span 1;
+    grid-column: 2/span 2;
+    grid-row: 2/span 1;
   }
 
   .explanation {
-    grid-column: 3/span 3;
+    grid-column: 5/span 3;
+    grid-row: 3/span 1;
   }
 
   .participation {
-    grid-column: 1/span 3;
+    grid-column: 2/span 3;
+    grid-row: 4/span 1;
   }
 
   .participation::after {
@@ -289,11 +291,13 @@ footer a {
   }
 
   .requirements {
-    grid-column: 1/span 5;
+    grid-column: 1/span 9;
+    grid-row: 5/span 1;
   }
 
   footer {
-    grid-column: 1/span 5;
+    grid-column: 1/span 9;
+    grid-row: 6/span 1;
   }
 
   /* satellite grid */
