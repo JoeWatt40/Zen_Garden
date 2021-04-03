@@ -100,8 +100,7 @@ $break-small: 62em;
     .main {
         display: grid;
         grid-template-columns: 25px repeat(7, 1fr) 25px;
-        grid-template-rows: 50px 150px 1fr 1fr 460px 40px;
-        gap: 1.5em;
+        grid-template-rows: 50px 150px 1fr 1fr 100px 450px 40px;
     }
 
     .benefits {
@@ -137,12 +136,12 @@ $break-small: 62em;
 
     .requirements {
         grid-column: 1 / span 9;
-        grid-row: 5 / span 1;
+        grid-row: 6 / span 1;
     }
 
     footer {
         grid-column: 1 / span 9;
-        grid-row: 6 / span 1;
+        grid-row: 7 / span 1;
     }
 
     /* satellite grid */
