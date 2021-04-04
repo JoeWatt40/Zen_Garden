@@ -1,6 +1,6 @@
 // media queries
 
-$break-small: 62em;
+$break-small: 72em;
 
 @media only screen and (min-width: $break-small)  {
     /* intro grid */
@@ -99,7 +99,7 @@ $break-small: 62em;
     /* main grid */
     .main {
         display: grid;
-        grid-template-columns: 25px repeat(7, 1fr) 25px;
+        grid-template-columns: 35px repeat(7, 1fr) 25px;
         grid-template-rows: 50px 150px 1fr 1fr 100px 450px 40px;
     }
 
@@ -149,5 +149,6 @@ $break-small: 62em;
         margin-top: 4em;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 7em;
     }
 }
