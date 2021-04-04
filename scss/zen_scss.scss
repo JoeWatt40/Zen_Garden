@@ -45,6 +45,14 @@ header h2 {
     text-align: center;
 }
 
+.intro a {
+    color: $color-3;
+}
+
+.intro a:hover {
+    color: $color-4;
+}
+
 #zen-summary p {
     padding: 1rem;
     color: $color-1;
@@ -106,12 +114,34 @@ footer a {
     float: left;
     text-align: center;
     width: 20%;
-    color: $color-1;
+    color: $color-5;
+    font-weight: bolder;
+    font-size: 1.15em;
+    font-family: Roboto Mono;
     margin-top: -8px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    font-size: 1.4em;
+    margin-top: -12px;
+    transition: 700ms ease-out;
+}
+
+.sidebar a {
+    color: $color-4;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    font-size: 1.05em;
+    text-decoration: underline;
+    transition: 500ms ease-out;
 }
 
 .design-selection, .design-archives, .zen-resources {
     text-align: left;
+    margin-top: 4em;
     padding-left: 10px;
 }
 

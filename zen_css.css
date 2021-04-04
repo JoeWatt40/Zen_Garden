@@ -47,6 +47,14 @@ header h2 {
   text-align: center;
 }
 
+.intro a {
+  color: #ff1010;
+}
+
+.intro a:hover {
+  color: #ffff6d;
+}
+
 #zen-summary p {
   padding: 1rem;
   color: #fff;
@@ -108,12 +116,34 @@ footer a {
   float: left;
   text-align: center;
   width: 20%;
-  color: #fff;
+  color: #000;
+  font-weight: bolder;
+  font-size: 1.15em;
+  font-family: Roboto Mono;
   margin-top: -8px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  font-size: 1.4em;
+  margin-top: -12px;
+  transition: 700ms ease-out;
+}
+
+.sidebar a {
+  color: #ffff6d;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  font-size: 1.05em;
+  text-decoration: underline;
+  transition: 500ms ease-out;
 }
 
 .design-selection, .design-archives, .zen-resources {
   text-align: left;
+  margin-top: 4em;
   padding-left: 10px;
 }
 
@@ -153,7 +183,7 @@ footer a {
   position: absolute;
 }
 
-@media only screen and (min-width: 62em) {
+@media only screen and (min-width: 72em) {
   /* intro grid */
   .intro {
     display: grid;
@@ -252,7 +282,7 @@ footer a {
   /* main grid */
   .main {
     display: grid;
-    grid-template-columns: 25px repeat(7, 1fr) 25px;
+    grid-template-columns: 35px repeat(7, 1fr) 25px;
     grid-template-rows: 50px 150px 1fr 1fr 100px 450px 40px;
   }
 
@@ -291,7 +321,7 @@ footer a {
 
   .requirements {
     grid-column: 1/span 9;
-    grid-row: 6/span 1;
+    grid-row: 5/span 2;
   }
 
   footer {
@@ -304,6 +334,7 @@ footer a {
     margin-top: 4em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 7em;
   }
 }
 
